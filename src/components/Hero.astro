@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets'
+import profile from '../images/profile.png'
+import { Icon } from 'astro-icon/components'
+---
+
+<div class="w-full bg-zinc-900 p-10 text-zinc-500">
+	<div class="container mx-auto max-w-3xl">
+		<nav class="flex items-center justify-between">
+			<a href="/">
+				<figure>
+					<Image src={profile} alt="developer profile" format="avif" class="w-9 rounded-full" />
+				</figure></a
+			>
+
+			<p class="flex items-center gap-1">
+				<span class="flex h-2 w-2 animate-pulse rounded-full bg-green-500"></span> Available for Work
+			</p>
+		</nav>
+
+		<div class="hero mt-8 space-y-2">
+			<h1 class="text-4xl font-bold text-zinc-100">Jack Reynolds</h1>
+
+			<p class="flex items-center gap-2 text-sm">
+				<span> <Icon name="location" class="cursor-pointer" /></span> Designer & Front-end Developer
+			</p>
+		</div>
+	</div>
+</div>
